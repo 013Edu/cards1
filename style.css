@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300;400;500 & display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins',sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f9ff;
+    color: #434343;
+}   
+main.cards{
+    display: flex;
+    padding: 32px;
+}
+main.cards section.card-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white ;
+    padding: 1rem 1.5rem;
+    margin-left: 32px;
+    max-height: 256px;
+    border-radius: 8px;
+}
+main.cards section.card-box.contact{
+    margin-left: 0;
+}
+main.cards section.card-box .icon{
+    width: 64px;
+    height: 64px;
+}
+main.cards section.card-box img{
+    width: 100%;;
+}
+main.cards section.card-box button{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 80%;
+    border: none;
+    border-radius: 32px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+main.cards section.card-box.contact button{
+     background: linear-gradient(to right, #9f66ff,#dfcbff);
+}
+main.cards section.card-box.shop button{
+    background: linear-gradient(to right, #3e8aff,#bbdeff);
+}
+main.cards section.card-box.about button{
+    background: linear-gradient(to right, #fe5f8f,#ffc7d9);
+}
+main.cards section.card-box.contact{
+     box-shadow: 20px 20px 50px -30px #dbc4ff;
+}
+main.cards section.card-box.shop{
+    box-shadow: 20px 20px 50px -30px #afd6ff;
+}
+main.cards section.card-box.about{
+    box-shadow: 20px 20px 50px -30px #ffc1d5;
+}
+main.cards section.card-box h3{
+    margin: 16px 0;
+    font-size: 100%;
+}
+main.cards section.card-box span{
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+}
+@media screen and (max-width: 720px) {
+    main.cards{
+        flex-direction: column;
+    }
+    main.cards section.card-box{
+        margin-left: 0;
+        margin-bottom: 16px;
+    }
+    main.cards section.card-box:last-child{
+        margin-bottom: 0;
+    }
+    main.cards section.card-box button{
+        font-size: 70%;
+    }
+}
+
+
+
+
